@@ -4,8 +4,4 @@ footer {
     min-width: 16.25rem;
     justify-content: flex-end;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
