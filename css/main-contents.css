@@ -61,6 +61,33 @@
     width: 100%;
 }
 
+.album-photo {
+    position: relative;
+}
+
+.album-photo i {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.album-photo img {
+    position: relative;
+}
+
+.album-photo:hover img {
+    position: relative;
+    filter: brightness(0.5);
+}
+
+.album-photo:hover i {
+    display: initial;
+}
+
 .popular .album-cover img {
     border-radius: 50%;
 }
