@@ -6,8 +6,17 @@ a {
     text-decoration: none;
 }
 
+a:hover  {
+    color: white !important;
+}
+
 ul {
     list-style: none;
+    cursor: pointer;
+}
+
+li:hover {
+    color: white;
 }
 
 body {

@@ -35,6 +35,7 @@ main h2 {
 
 .album-cover {
     padding: .625rem;
+    margin-top: .625rem;
     text-align: center;
     color: white;
     width: calc(100% / 2);
@@ -46,6 +47,15 @@ main h2 {
 
 .album-cover img {
     width: 100%;
+}
+
+.popular .album-cover img {
+    border-radius: 50%;
+}
+
+.created p,
+.popular p {
+    color: gray;
 }
 
 
