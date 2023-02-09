@@ -1,5 +1,12 @@
+
+nav {
+    justify-content: center;
+    width: 100%;
+}
+
 nav ul {
     margin-top: 6.25rem;
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
@@ -14,22 +21,54 @@ nav ul li {
 .right-container {
     padding: .625rem;
     width: 100%;
+    overflow: scroll;
 }
 
 main h2 {
     color: white;
+    padding: .625rem;
 }
 
+.albums {
+    flex-wrap: wrap;
+}
+
+.album-cover {
+    padding: .625rem;
+    text-align: center;
+    color: white;
+    width: calc(100% / 2);
+}
+
+.album-cover span {
+    color: gray;
+}
+
+.album-cover img {
+    width: 100%;
+}
 
 
 @media screen and (min-width: 640px){
     nav ul li {
         width: calc(100% / 3);
     }
+
+    .album-cover {
+        width: calc(100% / 4);
+    }
 }
 
 @media screen and (min-width: 878px){
+    nav ul {
+        max-width: 80%;
+    }
+    
     nav ul li {
+        width: calc(100% / 6);
+    }
+
+    .album-cover {
         width: calc(100% / 6);
     }
 }

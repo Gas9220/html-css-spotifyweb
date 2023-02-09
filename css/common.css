@@ -13,3 +13,7 @@ ul {
 body {
     background-color: #141922;
 }
+
+.top-big-container {
+    height: calc(100vh - 90px);
+}
