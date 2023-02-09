@@ -14,7 +14,6 @@ footer {
 .left-footer {
     align-items: center;
     gap: .625rem;
-    background-color: red;
 }
 
 .left-footer .mini-img {
@@ -95,7 +94,6 @@ footer {
     .track-info {
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: red;
     }
 
     .track-info span:last-child {
