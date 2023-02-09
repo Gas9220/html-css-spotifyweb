@@ -35,10 +35,18 @@ main .sidebar {
 
 .playlist {
     display: none;
-    padding: 0 1.5rem;
+    padding: 0 1.625rem;
     margin-top: .625rem;
     flex-grow: 1;
     overflow-y: hidden;
+}
+
+.sidebar-menu ul li:first-child {
+    border-left: 2px solid green;
+}
+
+.sidebar-menu ul li:not(:first-child) {
+    padding: 0 .125rem;
 }
 
 .playlist h4 {
@@ -61,6 +69,10 @@ main .sidebar {
     display: inline-block;
 }
 
+.menu-item {
+    padding: 0 1.5rem;
+}
+
 .playlist-list {
     flex-grow: 1;
     height: 100%;
@@ -81,7 +93,6 @@ main .sidebar {
 
 .profile {
     margin-top: auto;
-    padding: 0 1.5rem;
 }
 
 .profile-img {
@@ -110,7 +121,6 @@ main .sidebar {
 
     .sidebar .sidebar-menu {
         align-items: initial;
-        padding: 0 1.5rem;
     }
 
     .sidebar-icon {
