@@ -20,214 +20,213 @@
 </head>
 
 <body>
-    <!-- Top Big Container -->
-    <div class="top-big-container flex">
-        <!-- Left Container -->
-        <div class="left-container">
-            <!-- Sidebar -->
-            <div class="sidebar flex">
-                <!-- Sidebar top -->
-                <div class="sidebar-top">
-                    <img src="img/logo-small.svg" alt="logo" id="logo-small">
-                    <img src="img/logo.svg" alt="logo" id="logo">
+    <!-- Main -->
+    <main class="flex">
+        <!-- Sidebar -->
+        <div class="sidebar flex-column gray-text">
 
-
-                    <a href="#" class="sidebar-icon-label">
-                        <img src="img/home.svg" alt="home" class="sidebar-icon">
-                        <span class="labels">Home</span>
-                    </a>
-
-                    <a href="#" class="sidebar-icon-label">
-                        <img src="img/search.svg" alt="search" class="sidebar-icon">
-                        <span class="labels">Cerca</span>
-                    </a>
-
-                    <a href="#" class="sidebar-icon-label">
-                        <img src="img/libreria.svg" alt="library" class="sidebar-icon">
-                        <span class="labels">La tua libreria</span>
-                    </a>
-
-                    <div class="playlist">
-                        <h4><strong>PLAYLIST</strong></h4>
-                        <div class="new-playlist flex">
-                            <div class="plus-btn">+</div>
-                            <span class="labels">Crea playlist</span>
-                        </div>
-
-                        <ul class="playlist-list">
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /Sidebar top -->
-
-                <!-- Sidebar bottom -->
-                <div class="sidebar-bottom">
-                    <a href="#" class="sidebar-icon-label">
-                        <img src="img/download.svg" alt="library" class="sidebar-icon download">
-                        <span class="labels">Installa App</span>
-                    </a>
-                    <hr class="divider">
-                    <a href="#" class="sidebar-icon-label">
-                        <img src="img/profile.svg" alt="library" class="sidebar-icon profile-img">
-                        <span class="labels">John Doe</span>
-                    </a>
-                </div>
-                <!-- Sidebar bottom -->
+            <!-- Logo -->
+            <div class="logo">
+                <img src="img/logo-small.svg" alt="logo" id="logo-small">
+                <img src="img/logo.svg" alt="logo" id="logo-big">
             </div>
-            <!-- /Sidebar -->
-        </div>
-        <!-- /Left Container -->
+            <!-- /Logo -->
 
-        <!-- Right Container -->
-        <div class="right-container">
-            <!-- Header -->
+            <!-- Sidebar Menu -->
+            <nav class="sidebar-menu flex-column">
+                <ul>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <img src="img/home.svg" alt="home" class="sidebar-icon">
+                            <span class="labels">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <img src="img/search.svg" alt="search" class="sidebar-icon">
+                            <span class="labels">Cerca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <img src="img/libreria.svg" alt="library" class="sidebar-icon">
+                            <span class="labels">La tua libreria</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /Sidebar Menu -->
+
+            <!-- Playlist -->
+            <div class="playlist flex-column">
+                <h4><strong>PLAYLIST</strong></h4>
+                
+                <div class="new-playlist">
+                    <div class="plus-btn">+</div>
+                    <a href="#" class="labels">Crea Playlist</a>
+                </div>
+
+                <ul class="playlist-list">
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                </ul>
+            </div>
+            <!-- /Playlist -->
+
+            <!-- Profile -->
+            <div class="profile">
+                <a href="#" class="menu-item">
+                    <img src="img/download.svg" alt="library" class="sidebar-icon download">
+                    <span class="labels">Installa App</span>
+                </a>
+                <hr class="divider">
+                <a href="#" class="menu-item">
+                    <img src="img/profile.svg" alt="library" class="sidebar-icon profile-img">
+                    <span class="labels">John Doe</span>
+                </a>
+            </div>
+            <!-- /Profile -->
+
+        </div>
+        <!-- /Sidebar -->
+
+        <!-- Header -->
+        <div class="main-contents">
             <header class="flex">
                 <a href="#">EFFETTUA L'UPGRADE</a>
             </header>
             <!-- /Header -->
 
-            <!-- Main -->
-            <main>
-                <nav class="flex">
-                    <ul class="flex">
-                        <li>IN EVIDENZA</li>
-                        <li>PODCAST</li>
-                        <li>CLASSIFICHE</li>
-                        <li>GENERI E MOOD</li>
-                        <li>NUOVE USCITE</li>
-                        <li>SCOPRI</li>
-                    </ul>
-                </nav>
-
-                <div class="played">
-                    <h2>Recently Played</h2>
-                    <div class="albums flex">
-                        <div class="album-cover">
-                            <img src="img/metal_lifting.jpg" alt="album cover">
-                            <h4>Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="album-cover">
-                            <img src="img/stranger.jpeg" alt="album cover">
-                            <h4>Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="album-cover">
-                            <img src="img/aquietplace.jpeg" alt="album cover">
-                            <h4>Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="album-cover">
-                            <img src="img/split.jpeg" alt="album cover">
-                            <h4>Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="album-cover">
-                            <img src="img/cure.jpeg" alt="album cover">
-                            <h4>Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
-                        <div class="album-cover">
-                            <img src="img/sinister.jpeg" alt="album cover">
-                            <h4>Heavy Metal</h4>
-                            <span>Subtitle</span>
-                        </div>
+            <nav class="flex">
+                <ul class="flex">
+                    <li>IN EVIDENZA</li>
+                    <li>PODCAST</li>
+                    <li>CLASSIFICHE</li>
+                    <li>GENERI E MOOD</li>
+                    <li>NUOVE USCITE</li>
+                    <li>SCOPRI</li>
+                </ul>
+            </nav>
+            <div class="played">
+                <h2>Recently Played</h2>
+                <div class="albums flex">
+                    <div class="album-cover">
+                        <img src="img/metal_lifting.jpg" alt="album cover">
+                        <h4>Heavy Metal</h4>
+                        <span>Subtitle</span>
                     </div>
-                </div>
-
-                <div class="created">
-                    <h2>Creato per John Doe</h2>
-                    <p>Più ascolti più accurati saranno i tuoi suggerimenti</p>
-                    <div class="albums flex">
-                        <div class="album-cover">
-                            <img src="img/radar.jpeg" alt="album cover">
-                            <h4>Release Radar</h4>
-                        </div>
-                        <div class="album-cover">
-                            <img src="img/mixdaily.jpeg" alt="album cover">
-                            <h4>Daily Mix</h4>
-                        </div>
+                    <div class="album-cover">
+                        <img src="img/stranger.jpeg" alt="album cover">
+                        <h4>Heavy Metal</h4>
+                        <span>Subtitle</span>
                     </div>
-                </div>
-
-                <div class="popular">
-                    <h2>Creato per John Doe</h2>
-                    <p>Più ascolti più accurati saranno i tuoi suggerimenti</p>
-                    <div class="albums flex">
-                        <div class="album-cover">
-                            <img src="img/youg.jpeg" alt="album cover">
-                            <h4>Lana del rey</h4>
-                        </div>
-                        <div class="album-cover">
-                            <img src="img/einaudi.jpeg" alt="album cover">
-                            <h4>Ludovico Einaudi</h4>
-                        </div>
+                    <div class="album-cover">
+                        <img src="img/aquietplace.jpeg" alt="album cover">
+                        <h4>Heavy Metal</h4>
+                        <span>Subtitle</span>
                     </div>
-                </div>
-            </main>
-            <!-- /Main -->
-        </div>
-        <!-- /Right Container -->
-    </div>
-    <!-- /Top Big Container -->
-
-    <!-- Bottom Big Container -->
-    <div class="bottom-big-container">
-        <!-- Footer -->
-        <footer>
-            <div class="footer-content flex">
-                <div class="left-footer flex">
-                    <img src="img/sinister.jpeg" alt="immagine mini" class="mini-img">
-                    <div class="track-info flex">
-                        <span>Sinister</span>
-                        <span>Brano</span>
-                        <span>Nome</span>
+                    <div class="album-cover">
+                        <img src="img/split.jpeg" alt="album cover">
+                        <h4>Heavy Metal</h4>
+                        <span>Subtitle</span>
                     </div>
-
-                    <div class="track-options flex">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-regular fa-folder"></i>
+                    <div class="album-cover">
+                        <img src="img/cure.jpeg" alt="album cover">
+                        <h4>Heavy Metal</h4>
+                        <span>Subtitle</span>
                     </div>
-                </div>
-
-                <div class="middle-footer flex">
-                    <div class="middle-top">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-regular fa-circle-play"></i>
-                        <i class="fa-solid fa-forward-step"></i>
-                        <i class="fa-solid fa-rotate-right"></i>
-                    </div>
-                    <div class="middle-bottom flex">
-                        <small>0.25</small>
-                        <div class="track-line line">
-                            <div class="progress"></div>
-                        </div>
-                        <small>4.35</small>
-                    </div>
-
-                </div>
-
-                <div class="bottom-footer flex">
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                    <div class="volume-line line">
-                        <div class="progress"></div>
+                    <div class="album-cover">
+                        <img src="img/sinister.jpeg" alt="album cover">
+                        <h4>Heavy Metal</h4>
+                        <span>Subtitle</span>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- /Footer -->
-    </div>
-    <!--/ Bottom Big Container -->
+
+            <div class="created">
+                <h2>Creato per John Doe</h2>
+                <p>Più ascolti più accurati saranno i tuoi suggerimenti</p>
+                <div class="albums flex">
+                    <div class="album-cover">
+                        <img src="img/radar.jpeg" alt="album cover">
+                        <h4>Release Radar</h4>
+                    </div>
+                    <div class="album-cover">
+                        <img src="img/mixdaily.jpeg" alt="album cover">
+                        <h4>Daily Mix</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular">
+                <h2>Creato per John Doe</h2>
+                <p>Più ascolti più accurati saranno i tuoi suggerimenti</p>
+                <div class="albums flex">
+                    <div class="album-cover">
+                        <img src="img/youg.jpeg" alt="album cover">
+                        <h4>Lana del rey</h4>
+                    </div>
+                    <div class="album-cover">
+                        <img src="img/einaudi.jpeg" alt="album cover">
+                        <h4>Ludovico Einaudi</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content flex">
+            <div class="left-footer flex">
+                <img src="img/sinister.jpeg" alt="immagine mini" class="mini-img">
+                <div class="track-info flex">
+                    <span>Sinister</span>
+                    <span>Brano</span>
+                    <span>Nome</span>
+                </div>
+
+                <div class="track-options flex">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+
+            <div class="middle-footer flex">
+                <div class="middle-top">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="middle-bottom flex">
+                    <small>0.25</small>
+                    <div class="track-line line">
+                        <div class="progress"></div>
+                    </div>
+                    <small>4.35</small>
+                </div>
+
+            </div>
+
+            <div class="bottom-footer flex">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-line line">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
 </body>
 
 </html>

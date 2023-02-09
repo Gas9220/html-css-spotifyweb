@@ -1,10 +1,12 @@
-
-nav {
+.main-contents nav {
     justify-content: center;
-    width: 100%;
 }
 
-nav ul {
+.main-contents {
+    width: calc(100% - 3.125rem);
+}
+
+ .main-contents nav ul {
     margin-top: 6.25rem;
     width: 100%;
     justify-content: center;
@@ -12,19 +14,13 @@ nav ul {
     text-align: center;
 }
 
-nav ul li {
+.main-contents nav ul li {
     color: gray;
     width: calc(100% / 4);
     margin-bottom: 1.25rem;
 }
 
-.right-container {
-    padding: .625rem;
-    width: 100%;
-    overflow: scroll;
-}
-
-main h2 {
+ .main-contents h2 {
     color: white;
     padding: .625rem;
 }
@@ -59,9 +55,20 @@ main h2 {
 }
 
 
-@media screen and (min-width: 640px){
-    nav ul li {
-        width: calc(100% / 3);
+@media screen and (min-width: 552px){
+    .main-contents {
+        width: calc(100% - 14.375rem);
+        overflow: scroll;
+    }
+
+    .main-contents nav ul li {
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .main-contents nav ul li {
+        width: calc(100% / 5);
     }
 
     .album-cover {
@@ -70,11 +77,11 @@ main h2 {
 }
 
 @media screen and (min-width: 878px){
-    nav ul {
+    .main-contents nav ul {
         max-width: 80%;
     }
     
-    nav ul li {
+    .main-contents nav ul li {
         width: calc(100% / 6);
     }
 

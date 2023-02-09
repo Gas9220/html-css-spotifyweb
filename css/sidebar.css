@@ -1,80 +1,74 @@
-.sidebar {
+main .sidebar {
     width: 3.125rem;
-    height: calc(100vh - 90px);
     background-color: black;
-    padding: .625rem;
-    flex-direction: column;
-    justify-content: space-between;
-    color: gray;
-    overflow: hidden;
-    position: relative;
+    align-items: center;
 }
 
-.sidebar-top,
-.sidebar-bottom {
-    align-self: center;
-}
-
-#logo {
+.logo #logo-big {
     display: none;
+    max-width: 80%;
+    padding: 1rem;
 }
 
-#logo-small {
+.menu-item {
+    display: block;
+    margin-bottom: 0.625rem;
+}
+
+.menu-item>* {
+    vertical-align: middle;
+}
+
+.logo #logo-small {
     margin-bottom: 1.25rem;
+    margin-top: .3125rem;
+    width: 2rem;
 }
 
 .labels {
     display: none;
-    vertical-align: bottom;
-}
-
-.sidebar-icon-label {
-    margin: 0 auto;
-    width: 100%;
-    text-align: left;
 }
 
 .sidebar-icon {
-    width: 1.25rem;
-    height: 1.25rem;
-}
-
-.sidebar>* a {
-    color: inherit;
-    display: block;
-    margin-bottom: 0.8rem;
+    width: 1.5rem;
 }
 
 .playlist {
     display: none;
+    padding: 0 1.5rem;
+    margin-top: .625rem;
+    flex-grow: 1;
+    overflow-y: hidden;
+}
+
+.playlist h4 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.new-playlist {
+    margin: .625rem 0;
 }
 
 .plus-btn {
     margin-right: 0.8rem;
-    background-color: white;
+    background-color: gray;
     color: black;
-    width: 1.7rem;
-    height: 1.7rem;
     text-align: center;
+    width: 2rem;
+    height: 2rem;
     font-size: 1.5rem;
-}
-
-.new-playlist {
-    margin-top: 1rem;
-    align-items: center;
+    display: inline-block;
 }
 
 .playlist-list {
-    margin-top: 1rem;
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .playlist-list li {
-    margin-top: 0.7rem;
-}
-
-.profile-img {
-    background-color: gray;
-    border-radius: 50%;
+    margin-bottom: .3125rem;
 }
 
 .divider {
@@ -85,58 +79,50 @@
     scale: 0.8;
 }
 
-@media screen and (min-width: 640px) {
+.profile {
+    margin-top: auto;
+    padding: 0 1.5rem;
+}
 
-    .sidebar {
+.profile-img {
+    background-color: gray;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 552px) {
+    main .sidebar {
         width: 14.375rem;
-        padding: 1.875rem;
+        align-items: initial;
+
     }
 
-    #logo-small {
+    .logo #logo-big {
+        display: initial;
+    }
+
+    .logo #logo-small {
         display: none;
     }
 
-    #logo {
-        display: block;
-        margin-bottom: 1.875rem;
+    .labels {
+        display: initial;
     }
 
-    .labels {
-        display: inline-block;
+    .sidebar .sidebar-menu {
+        align-items: initial;
+        padding: 0 1.5rem;
     }
 
     .sidebar-icon {
-        vertical-align: middle;
-        margin-right: .625rem;
+        margin-right: .3125rem;
     }
 
-    .sidebar-top {
-        width: 100%;
-        text-align: left;
-    }
-
-    .sidebar-top,
-    .sidebar-bottom {
-        align-self: auto;
+    .playlist {
+        display: initial;
     }
 
     .divider {
         display: block;
         margin: 0.5rem 0;
-    }
-
-    .sidebar-bottom {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        padding: 0 1.5rem;
-        z-index: 200;
-        background-color: black;
-    }
-
-    .playlist {
-        display: block;
-        margin-top: 1.5rem;
     }
 }

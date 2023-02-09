@@ -2,8 +2,18 @@
     display: flex;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gray-text {
+    color: gray;
+}
+
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover  {
@@ -23,6 +33,7 @@ body {
     background-color: #141922;
 }
 
-.top-big-container {
-    height: calc(100vh - 90px);
+main {
+    height: calc(100vh - 5.625rem);
+    overflow: hidden;
 }
