@@ -21,6 +21,21 @@
     margin-bottom: 1.25rem;
 }
 
+.main-contents nav ul li:first-child {
+    position: relative;
+    padding-bottom: .4rem;
+}
+
+.main-contents nav ul li:first-child::after {
+    content: "";
+    background: green;
+    position: absolute;
+    bottom: 0;
+    left: calc(30%);
+    height: 2px;
+    width: 40%;
+}
+
  .main-contents h2 {
     color: white;
     padding: .625rem;
