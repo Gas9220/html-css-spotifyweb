@@ -14,7 +14,11 @@ header a {
     border: 1px solid white;
     padding: 0.8rem 2rem;
     border-radius: 50px;
-    margin-right: 1.25rem;
+    margin-right: 1.8rem;
+}
+
+header a:hover {
+    scale: 1.1;
 }
 
 
